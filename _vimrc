@@ -39,110 +39,35 @@ function MyDiff()
 endfunction
 
 
-
-
-
-
-
-
-
-
-
-
 " --------------------------自定义部分----------------------------------------
-
-
-" 禁止显示菜单和工具条,并绑定到快捷键F2 
-set guioptions-=m 
-set guioptions-=T
-map <silent> <F2> :if &guioptions =~# 'T' <Bar>
-        \set guioptions-=T <Bar>
-        \set guioptions-=m <bar>
-    \else <Bar>
-        \set guioptions+=T <Bar>
-        \set guioptions+=m <Bar>
-    \endif<CR>
-	
-" F11 为Vim全屏切换快捷键 
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-
-" 在插入模式下也设置F11全屏 
-imap <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-
-" 启动 vim 时自动全屏 
-au GUIEnter * simalt ~x
-
-" set the file encoding
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
-set encoding=utf-8
-
-" other settings
-set number
-set cursorline
-color darkblue 
-set clipboard=unnamed
-set cursorline
-set noshowmode
-
-" fonts
-"-----------------------------air_line-------------------------------------
-"let g:airline_powerline_fonts = 1
-"if !exists('g:airline_symbols')
-"  let g:airline_symbols = {}
-"endif
-"if !exists('g:airline_symbols')
-"    let g:airline_symbols = {}
-"  endif
-
-"  " unicode symbols
-"  let g:airline_left_sep = '»'
-"  let g:airline_left_sep = '▶'
-"  let g:airline_right_sep = '«'
-"  let g:airline_right_sep = '◀'
-"  let g:airline_symbols.linenr = '␊'
-"  let g:airline_symbols.linenr = '␤'
-"  let g:airline_symbols.linenr = '¶'
-"  let g:airline_symbols.branch = '⎇'
-"  let g:airline_symbols.paste = 'ρ'
-"  let g:airline_symbols.paste = 'Þ'
-"  let g:airline_symbols.paste = '∥'
-"  let g:airline_symbols.whitespace = 'Ξ'
-"------------------------------------------------------------------
-
-" map Nerdtree keymap
-"------------------------NerdTree------------------------------------------
-nnoremap <silent> <F3> :NERDTreeToggle<Enter>
-let NERDTreeMinimalUI=1
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-
-
-" indention
-set showtabline=2
-set autoindent
 
 " config file position
 source $VIMRUNTIME/vimrc_example.vim
 
-" remove the file which is prefixed with ~
-set noundofile
-set nobackup
-set noswapfile
-
-" wrap
-set ruler
-set linebreak
-
-" search
-set ignorecase
-set smartcase
+"---------------------------------------
+"		keyMap.vim
+"---------------------------------------
+source F:\Vim\vimfiles\plugin\KeyMap.vim
 
 
-" filetype
-filetype on
-filetype indent on
-filetype plugin on
+"---------------------------------------
+"		appearance.vim
+"---------------------------------------
+source F:\Vim\vimfiles\plugin\appearance.vim
+
+
+"---------------------------------------
+"		encoding.vim
+"---------------------------------------
+source F:\Vim\vimfiles\plugin\encoding.vim
+
+
+"---------------------------------------
+"		fonts.vim
+"---------------------------------------
+source F:\Vim\vimfiles\plugin\fonts.vim
+
+
 " --------------------------自定义部分----------------------------------------
 
 
