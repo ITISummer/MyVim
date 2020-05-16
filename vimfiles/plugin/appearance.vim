@@ -8,7 +8,7 @@ au GUIEnter * simalt ~x
 " other settings
 set number
 set cursorline
-color darkblue 
+color evening 
 set clipboard=unnamed
 set cursorline
 set noshowmode

@@ -23,3 +23,19 @@
 "  let g:airline_symbols.paste = '∥'
 "  let g:airline_symbols.whitespace = 'Ξ'
 "------------------------------------------------------------------
+set guifont=courier_new:h11:b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
