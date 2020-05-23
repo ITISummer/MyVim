@@ -1,3 +1,14 @@
+"   _     __     __    _     __     __  _   ____        __     __             __  __   
+"  |"|    \ \   /"/u  |"|    \ \   /"/u|"| / __"| u     \ \   /"/u  ___     U|' \/ '|u 
+"U | | u   \ \ / // U | | u   \ \ / // |_|<\___ \/       \ \ / //  |_"_|    \| |\/| |/ 
+" \| |/__  /\ V /_,-.\| |/__  /\ V /_,-.   u___) |       /\ V /_,-. | |      | |  | |  
+"  |_____|U  \_/-(_/  |_____|U  \_/-(_/    |____/>>     U  \_/-(_/U/| |\u    |_|  |_|  
+"  //  \\   //        //  \\   //           )(  (__)      //   .-,_|___|_,-.<<,-,,-.   
+" (_")("_) (__)      (_")("_) (__)         (__)          (__)   \_)-' '-(_/  (./  \.)  
+
+
+
+
 " Vim with all enhancements
 
 " Use the internal diff if available.
@@ -97,19 +108,16 @@ source F:\Vim\vimfiles\plugin\Plugin_repeat.vim
 " --------------------------插件安装----------------------------------------
 call plug#begin('F:\Vim\vimfiles\plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tomtom/tcomment_vim'
-
-
+Plug 'vim-airline/vim-airline' " beauty the status bar
+Plug 'preservim/nerdtree' " display file tree in the directory
+Plug 'ctrlpvim/ctrlp.vim' " search file via file name 
+Plug 'tpope/vim-surround' " support 'ys' 'ds' command
+Plug 'tpope/vim-repeat'   " the plugin surround's complementary plugin
+Plug 'tomtom/tcomment_vim' " strengthen the comment function, can use 'ctrl+/'
+" Plug 'Valloric/YouCompleteMe' " code-completion
 
 call plug#end()
 " --------------------------插件安装----------------------------------------
-
-
 
 
 
