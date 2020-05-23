@@ -113,7 +113,7 @@ Plug 'preservim/nerdtree' " display file tree in the directory
 Plug 'ctrlpvim/ctrlp.vim' " search file via file name 
 Plug 'tpope/vim-surround' " support 'ys' 'ds' command
 Plug 'tpope/vim-repeat'   " the plugin surround's complementary plugin
-Plug 'tomtom/tcomment_vim' " strengthen the comment function, can use 'ctrl+/'
+" Plug 'tomtom/tcomment_vim' " strengthen the comment function, can use 'ctrl+/'
 " Plug 'Valloric/YouCompleteMe' " code-completion
 
 call plug#end()
